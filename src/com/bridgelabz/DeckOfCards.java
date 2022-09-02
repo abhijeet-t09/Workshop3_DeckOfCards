@@ -15,5 +15,19 @@ public class DeckOfCards {
                 System.out.println(cardArray[i][j]);
             }
         }
+
+        Players player = new Players();
+        int noOfPlayer = player.noOfPlayers();
+
+        for(int i=0;i<noOfPlayer;i++) {
+
+            System.out.println();
+            System.out.println("\nPlayer " + (i + 1) + " Cards.....");
+            System.out.println();
+
+            for (int j = 0; j < 9; j++) {
+                System.out.println(cardArray[i][j]);
+            }
+        }
     }
 }
